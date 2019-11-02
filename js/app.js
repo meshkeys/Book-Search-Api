@@ -12,7 +12,7 @@ function bookSearch(){
             aurthors=results.innerHTML += `<h5>` + data.items[i].volumeInfo.authors +`</h5>`
               publisheDate=results.innerHTML += `<h5>` + data.items[i].volumeInfo.publishedDate +`</h5>`
               description=results.innerHTML += `<h5 class="card" style="width: 50rem">` + data.items[i].volumeInfo.description +`</h5>`
-              url= data.items[i].volumeInfo.imageLinks.thumbnail;
+              
   
           }
       }, 
