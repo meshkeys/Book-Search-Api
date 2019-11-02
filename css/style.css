@@ -1,0 +1,12 @@
+body {
+    background: darksalmon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10em;
+    max-width: 80vmax;
+}
+button{
+    margin: 0.9em;
+}
+.float{
+    float: right;
+}
