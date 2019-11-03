@@ -1,5 +1,5 @@
 body {
-    background: darksalmon;
+    background: lightslategrey;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 10em;
     max-width: 80vmax;
@@ -9,4 +9,7 @@ button{
 }
 .float{
     float: right;
+}
+#result{
+    background:  black;
 }
