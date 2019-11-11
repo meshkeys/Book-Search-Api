@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Google Books Embedded Viewer API Example</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
-    <body>
-            <body class="bg-light">
-                    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-                    <title>Google Books Embedded Viewer API Example</title>
-              
+            <body class="">
                     <div class="container">
-                      <h1 class="display-4 align-middle mt-5 text-dark">Google Api App</h1>
+                      <h1 class="display-4 align-middle mt-5 text-dark">Google Library</h1>
                     </div>
               
-                    <div class="container mt-5 p-3 border-0" id="myform">
-                        <div class="card text-white bg-dark mb-3 float-left shadow-lg" style="max-width: 20rem;">
+                    <div class="container" id="myform">
+                        <div class="card text-white bg-dark mb-3 shadow-lg" style="max-width: 20rem;">
                             <div class="card-header">Google Books Api App</div>
                             <div class="card-body">
                               <h4 class="card-title">Find Books</h4>
-                              <input type="text" class="form-control isbn" id="Search" placeholder="Search Word">
+                              <input type="text" class="form-control" id="Search" placeholder="Search Word">
                               <button class="btn btn-primary mt-2 mb-2" id="searchbtn">Search</button>
                             </div>
                           </div>
-                    </div>
-              
-                    <div id="results" style="width: 800px; height: 800px" class="mr-3 float-right"></div>            
+                    </div>           
         </div>
+        <div class="text-center" style="display: none;">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+          <div id="results" class="card-title"></div>
+         
         <script
               src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous">
         </script>
